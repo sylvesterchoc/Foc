@@ -1,31 +1,35 @@
-/* Reset some default styles and set a background color */
-body {
+/* Reset some default browser styles */
+html, body, h1, h2, h3, h4, h5, h6, p, ul, li, a {
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4;
+}
+
+/* Set a background color for the whole page */
+body {
+  background-color: #f2f2f2;
   font-family: Arial, sans-serif;
 }
 
 /* Style the header */
 header {
-  background-color: #333;
+  background-color: #007bff;
   color: #fff;
   text-align: center;
-  padding: 20px 0;
+  padding: 20px;
 }
 
 header h2 {
   font-size: 32px;
+  font-weight: bold;
 }
 
-/* Style the navigation */
+/* Style the navigation menu */
 nav ul {
   list-style: none;
-  padding: 0;
   display: flex;
   justify-content: center;
-  background-color: #333;
-  margin: 0;
+  background-color: #007bff;
+  padding: 10px;
 }
 
 nav li {
@@ -35,54 +39,59 @@ nav li {
 nav a {
   text-decoration: none;
   color: #fff;
-  font-size: 18px;
+  font-weight: bold;
 }
 
-/* Style the article section */
+/* Style the main article content */
 article {
-  text-align: center;
+  background-color: #fff;
   padding: 20px;
+  margin: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 article img {
-  max-width: 100%;
-  height: auto;
+  display: block;
+  margin: 0 auto;
 }
 
 article p {
-  font-size: 16px;
-  line-height: 1.5;
+  font-size: 18px;
+  line-height: 1.6;
 }
 
 /* Style the footer */
 footer {
   text-align: center;
-  background-color: #333;
+  background-color: #007bff;
   color: #fff;
-  padding: 10px 0;
+  padding: 10px;
 }
 
-/* Add responsive styles for smaller screens */
+/* Responsive design */
 @media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav li {
+    text-align: center;
+    margin: 10px 0;
+  }
+
   header h2 {
     font-size: 24px;
   }
 
-  nav ul {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  nav li {
-    margin: 10px 0;
+  article {
+    margin: 10px;
+    padding: 15px;
   }
 }
 
-/* Bootstrap overrides */
-.container {
-  max-width: 1140px;
+/* Additional styles for links and hover effects */
+a:hover {
+  text-decoration: underline;
 }
 
-/* Add any other specific styles for your website */
-
-}
