@@ -1,87 +1,73 @@
-/* Reset some default styles and set a background color */
-body {
+/* Reset default margin and padding for all elements */
+* {
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4;
+  box-sizing: border-box;
+}
+
+/* Set a background image for the body */
+body {
+  background-image: url('night.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   font-family: Arial, sans-serif;
 }
 
 /* Style the header */
 header {
-  background-color: #333;
-  color: #fff;
   text-align: center;
-  padding: 20px 0;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5); /* Add a semi-transparent background color */
 }
 
 header h2 {
-  font-size: 32px;
+  color: white;
 }
 
-/* Style the navigation */
+/* Style the navigation menu */
+nav {
+  background-color: rgba(0, 0, 0, 0.7); /* Add a semi-transparent background color */
+}
+
 nav ul {
   list-style: none;
-  padding: 0;
   display: flex;
-  justify-content: center;
-  background-color: #333;
-  margin: 0;
+  justify-content: flex-start;
+  padding: 10px;
 }
 
 nav li {
-  margin: 0 20px;
+  margin-right: 20px;
 }
 
 nav a {
   text-decoration: none;
-  color: #fff;
-  font-size: 18px;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s; /* Add a smooth color transition on hover */
+}
+
+nav a:hover {
+  color: #ffd700; /* Change color on hover, you can use any color you prefer */
 }
 
 /* Style the article section */
 article {
-  text-align: center;
+  background-color: rgba(255, 255, 255, 0.8); /* Add a semi-transparent background color */
   padding: 20px;
-}
-
-article img {
-  max-width: 100%;
-  height: auto;
-}
-
-article p {
-  font-size: 16px;
-  line-height: 1.5;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add a shadow to the article */
 }
 
 /* Style the footer */
 footer {
   text-align: center;
-  background-color: #333;
-  color: #fff;
-  padding: 10px 0;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.7); /* Add a semi-transparent background color */
+  color: white;
 }
 
-/* Add responsive styles for smaller screens */
-@media (max-width: 768px) {
-  header h2 {
-    font-size: 24px;
-  }
-
-  nav ul {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  nav li {
-    margin: 10px 0;
-  }
-}
-
-/* Bootstrap overrides */
-.container {
-  max-width: 1140px;
-}
-
-/* Add any other specific styles for your website */
+/* Additional styles can be added as needed */
 
