@@ -1,73 +1,82 @@
-/* Reset default margin and padding for all elements */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+/* Reset some default styles */
+body, h2, h5, p {
+    margin: 0;
+    padding: 0;
 }
 
-/* Set a background image for the body */
+/* Set the background image */
 body {
-  background-image: url('night.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  font-family: Arial, sans-serif;
+    background-image: url('night.jpg'); /* Replace 'background.jpg' with your image file path */
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
 }
 
 /* Style the header */
 header {
-  text-align: center;
-  padding: 20px;
-  background-color: rgba(0, 0, 0, 0.5); /* Add a semi-transparent background color */
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
 }
 
 header h2 {
-  color: white;
+    font-size: 36px;
+    color: #fff;
 }
 
 /* Style the navigation menu */
 nav {
-  background-color: rgba(0, 0, 0, 0.7); /* Add a semi-transparent background color */
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
 }
 
 nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: flex-start;
-  padding: 10px;
+    list-style: none;
 }
 
-nav li {
-  margin-right: 20px;
+nav ul li {
+    display: inline;
+    margin: 0 20px;
 }
 
 nav a {
-  text-decoration: none;
-  color: white;
-  font-weight: bold;
-  transition: color 0.3s; /* Add a smooth color transition on hover */
+    text-decoration: none;
+    font-size: 20px;
+    color: #fff;
+    transition: color 0.3s;
 }
 
 nav a:hover {
-  color: #ffd700; /* Change color on hover, you can use any color you prefer */
+    color: #ffcc00; /* Change to your desired hover color */
 }
 
-/* Style the article section */
+/* Center align the article */
 article {
-  background-color: rgba(255, 255, 255, 0.8); /* Add a semi-transparent background color */
-  padding: 20px;
-  margin: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add a shadow to the article */
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    margin: 20px;
+}
+
+article img {
+    width: 505px;
+    height: 200px;
+}
+
+article p {
+    font-size: 18px;
+    color: #333;
 }
 
 /* Style the footer */
 footer {
-  text-align: center;
-  padding: 10px;
-  background-color: rgba(0, 0, 0, 0.7); /* Add a semi-transparent background color */
-  color: white;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
 }
 
-/* Additional styles can be added as needed */
-
+footer p {
+    font-size: 16px;
+    color: #fff;
+}
